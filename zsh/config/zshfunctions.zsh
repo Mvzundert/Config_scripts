@@ -150,10 +150,12 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Custom MAC OSX functions
 
-    #Fix displaying of ugly user.
+if [[ ! -n $THEME ]]; then
+    #Fix displaying of ugly user when no theme is set.
     prompt_context() {
         if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
             prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
         fi
     }
+fi
 fi
