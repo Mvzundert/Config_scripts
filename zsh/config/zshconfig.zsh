@@ -29,3 +29,12 @@ else
     export EDITOR='vim'
 fi
 
+if [[ -n $THEME ]]; then
+  if [ -d  ~/powerlevel9k ]; then
+      source  ~/powerlevel9k/powerlevel9k.zsh-theme
+      source "$DOTFILES/zsh/theme/9k.zsh"
+  fi
+else
+    source "$DOTFILES/zsh/prompts/zshprompt.zsh"
+fi
+

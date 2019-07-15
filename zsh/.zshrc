@@ -3,6 +3,7 @@
 # -------------------------------------------------------------------
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
+export THEME=TRUE
 
 # -------------------------------------------------------------------
 # Report time and code stuff.
@@ -17,7 +18,7 @@ if [[ -d ~/code ]]; then
 fi
 
 # -------------------------------------------------------------------
-# ZSH config 
+# ZSH config
 # -------------------------------------------------------------------
 # Function to load all ZSH config
 for file in $ZSH/config/*; do
@@ -25,7 +26,7 @@ for file in $ZSH/config/*; do
 done
 
 # -------------------------------------------------------------------
-# Source all custom files 
+# Source all custom files
 # -------------------------------------------------------------------
 # Function to load all custom files, if you break it, it's on you.
 for file in $ZSH/custom/custom_*; do
