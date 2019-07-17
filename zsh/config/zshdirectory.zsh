@@ -1,7 +1,7 @@
 setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushdminus
-setopt autocd 
+setopt autocd
 
 ############################
 # Directory alias
@@ -18,13 +18,11 @@ alias ...='cd ../..'
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-#alias l="ls -lah ${colorflag}"
-#alias la="ls -AF ${colorflag}"
-#alias ll="ls -lah ${colorflag}"
+alias l="ls -lah ${colorflag}"
+alias la="ls -AF ${colorflag}"
+alias ll="ls -lah ${colorflag}"
 alias lld="ls -l | grep ^d"
 alias rmf="rm -rf"
-alias l='colorls --group-directories-first --almost-all'
-alias ll='colorls --group-directories-first --almost-all --long' # detailed list view
 
 alias d='dirs -v | head -10'
 alias 1='cd -'
